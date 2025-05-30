@@ -2,5 +2,7 @@
     "github-utils.githubURL": "https://github.com/GitJohnFis/AI-droids-Enemies",
     "git-enabled": true,
     "git.autoCommit": true,
-    "git.defaultBranch": "main"
+    "git.defaultBranch": "main",
+    "linting.enabled": true,
+    "linting.prefer": "eslint"
 }
