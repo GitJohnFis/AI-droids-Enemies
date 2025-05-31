@@ -14,7 +14,7 @@ class EnemyShip:
     distance = math.sqrt(dx**2 + dy**2)
 
     if distance != 0:
-      dx, dy =dx/distance, dy/distance #normal direction for player
+      dx, dy = dx/distance, dy/distance #normal direction for player
       self.x += dx * self.speed
       self.y += dy * self.speed
       self.rect.topleft = (self.x, self.y)
