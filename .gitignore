@@ -1,2 +1,4 @@
+.vscode/
 brackets.json
-/scripts
+# ignore scripts in git
+scripts/
