@@ -47,4 +47,59 @@ AGRO timer logic when it runs
     self.move_towards_player(player_x, player_y)
 
 
+#Add this new code with three new states(retreat, AGRO, Defense)
+# import pygame
+# import math
+# from state import EnemyState
+
+# class EnemyShip:
+#     def __init__(self, x, y):
+#         self.x, self.y = x, y
+#         self.state = EnemyState.RETREAT
+#         self.retreat_speed = 2
+#         self.defense_speed = 3
+#         self.agro_speed = 6
+#         self.color = (255, 0, 0)
+#         self.rect = pygame.Rect(self.x, self.y, 40, 40)
+#         self.agro_timer = 0
+
+#     def set_state(self, new_state, duration=None):
+#         self.state = new_state
+#         if new_state == EnemyState.AGRO and duration:
+#             self.agro_timer = duration
+
+#     def update(self, player_x, player_y):
+#         # AGRO timer logic
+#         if self.state == EnemyState.AGRO and self.agro_timer > 0:
+#             self.agro_timer -= 1
+#             if self.agro_timer == 0:
+#                 self.state = EnemyState.DEFENSE
+
+#         self.move_by_state(player_x, player_y)
+
+#     def move_by_state(self, player_x, player_y):
+#         dx, dy = player_x - self.x, player_y - self.y
+#         distance = math.hypot(dx, dy)
+#         if distance > 1e-6:
+#             dx, dy = dx / distance, dy / distance
+#             if self.state == EnemyState.RETREAT:
+#                 # Move away from player
+#                 speed = self.retreat_speed
+#                 self.x -= dx * speed
+#                 self.y -= dy * speed
+#             elif self.state == EnemyState.DEFENSE:
+#                 # Move perpendicular (evasive action)
+#                 speed = self.defense_speed
+#                 self.x += -dy * speed
+#                 self.y += dx * speed
+#             elif self.state == EnemyState.AGRO:
+#                 # Move aggressively toward player
+#                 speed = self.agro_speed
+#                 self.x += dx * speed
+#                 self.y += dy * speed
+#             self.rect.topleft = (self.x, self.y)
+
+#     def draw(self, screen):
+#         pygame.draw.rect(screen, self.color, self.rect)
+
 
