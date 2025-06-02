@@ -1,4 +1,4 @@
-# 🤝 Contributing to AI-droids-Enemies
+# Contributing to AI-droids-Enemies Guidelines
 
 Thank you for your interest in contributing to **AI-droids-Enemies**!  
 We welcome all contributions: bug reports, feature requests, code, documentation, and ideas.  
