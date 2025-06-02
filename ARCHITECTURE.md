@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     subgraph Engine["Game Engine (main.py)"]
         direction TB
