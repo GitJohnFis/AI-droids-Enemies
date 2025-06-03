@@ -6,4 +6,4 @@ brackets.json
 # ignore scripts in git
 
 requirements.txt
-*.tar.gz
+*.tar.gzjulia-1.9.3-linux-x86_64.tar.gz
