@@ -9,8 +9,7 @@ class EnemyShip:
     self.agro_speed = 6 #increased or 2x speed for AGRO mode
     self.color = (255, 0, 0) #red AI-enemy 
     self.rect = pygame.Rect(self.x, self.y, 40, 40)
-    self.state = 'normal'
-    self.agro_timer = 0  # Optional: time to stay in AGRO mode
+    self.state = "normal" # AI state can be Normal, Defensive, or Aggressive
 
   def move_towards_player(self, player_x, player_y):
     dx, dy = player_x - self.x, player_y - self.y

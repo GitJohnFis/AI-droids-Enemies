@@ -19,4 +19,25 @@
 
 > *Formation flying (dynamic)*
 ---
+## Installing Julia Dependencies
 
+Run the following commands in your terminal to install Julia and its dependencies:
+
+```bash
+# Update package lists
+sudo apt update
+
+# Install dependencies (optional but recommended)
+sudo apt install -y wget
+
+# Download Julia (replace version with latest stable)
+wget https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.3-linux-x86_64.tar.gz
+
+# Extract it to /opt (or wherever you want)
+sudo tar -xvzf julia-1.9.3-linux-x86_64.tar.gz -C /opt/
+
+# Create a symlink for easy access
+sudo ln -s /opt/julia-1.9.3/bin/julia /usr/local/bin/julia
+
+# Verify installation
+julia --version

@@ -4,4 +4,5 @@ node_modules/
 .vscode/
 brackets.json
 # ignore scripts in git
+
 requirements.txt
