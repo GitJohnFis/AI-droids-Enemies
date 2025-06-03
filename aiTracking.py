@@ -11,6 +11,7 @@ class EnemyShip:
     self.rect = pygame.Rect(self.x, self.y, 40, 40)
     self.state = "normal" # AI state can be Normal, Defensive, or Aggressive
     self.agro_timer = 0
+    self.base_speed = self.speed #base speed for normal state
 
   def move_towards_player(self, player_x, player_y):
     dx, dy = player_x - self.x, player_y - self.y
